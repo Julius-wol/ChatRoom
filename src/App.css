@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+/* Header styling */
+.custom-header {
+  border-bottom: 3px solid #fff;
+  /* Đường kẻ xanh dưới navbar */
+  background-color: rgb(132, 40, 40) !important;
+  /* Màu nền dark */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand-text {
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Footer styling */
+.custom-footer {
+  border-top: 2px solid #fff;
+  /* Đường kẻ xanh trên footer */
+  background-color: rgb(132, 40, 40) !important;
+  color: #adb5bd;
+  padding: 1.5rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Giúp main content luôn chiếm hết màn hình để đẩy footer xuống đáy */
+.main-content {
+  min-height: calc(100vh - 160px);
+  /* Trừ đi chiều cao của header và footer */
+  padding-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hiệu ứng cho NavLink khi Active (đang ở trang đó) */
+.nav-link.active {
+  color: #fff !important;
+  font-weight: bold;
 }
